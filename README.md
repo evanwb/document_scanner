@@ -1,4 +1,4 @@
-# Just a simple document scanner 
+# Simple Document Scanner
 ### The scanner uses opencv to extract a scan of a document from a given image and saves it as a 
 ### Usage
 ```
