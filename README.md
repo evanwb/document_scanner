@@ -1,4 +1,11 @@
 # Just a simple document scanner 
+### The scanner uses opencv to extract a scan of a document from a given image and saves it as a 
+### Usage
+```sh
+  python3 scanner.py -i test_images/receipt.jpg
+```
 
-##### The scanner uses opencv to extract a scanned pdf of a document from a given image
+![Original Image](docs/original.png)
+![Outlined Document](docs/outline.png)
+![Scanned Document](docs/scanned.png)
 
