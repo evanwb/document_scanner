@@ -25,7 +25,7 @@ edged = cv2.Canny(gray, 75, 200)
 
 # show original image and edge detected image 
 print('applying edge detection')
-cv2.imshow('Original', image)
+cv2.imshow('Original Image', image)
 #cv2.imshow('Edged', edged)
 #cv2.waitKey(0)
 #cv2.destroyAllWindows()
@@ -55,7 +55,7 @@ for c in cnts:
 print('finding contours of document')
 cv2.drawContours(image, [screen_contours], -1, (255,0,0), 2)
 image = imutils.resize(image, width=image.shape[0])
-cv2.imshow('Outline', image)
+cv2.imshow('Document Outline', image)
 #cv2.waitKey(0)
 #cv2.destroyAllWindows()
 
@@ -68,9 +68,9 @@ T = threshold_local(warped, 11, offset=10, method='gaussian')
 warped = (warped>T).astype('uint8') * 255
 
 # show original image and scanned images
-print('[info] applying perspective transform')
+print('applying perspective transform')
 cv2.imshow('Original', imutils.resize(original, height=650))
-cv2.imshow('Scanned', imutils.resize(warped, height=650))
+cv2.imshow('Scanned Document', imutils.resize(warped, height=650))
 name = args['image'][:len(args['image'])-4]
 filename = name+'_scanned.jpg'
 cv2.imwrite(filename, warped)
