@@ -1,7 +1,7 @@
 # Just a simple document scanner 
 
-![Original Image](docs/orginal.png)
-![Outlined Document](docs/outlinel.png)
+![Original Image](docs/original.png)
+![Outlined Document](docs/outline.png)
 ![Scanned Document](docs/scanned.png)
 
 
