@@ -8,7 +8,4 @@ Original Image                     | Document Outline | Scanned Document
 :---------------------------------:|:----------------:|:---------------:
 ![Original Image](docs/original.png) | ![Outlined Document](docs/outline.png) | ![Scanned Document](docs/scanned.png)
 
-![Original Image](docs/original.png)
-![Outlined Document](docs/outline.png)
-![Scanned Document](docs/scanned.png)
 
