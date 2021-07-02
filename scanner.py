@@ -8,7 +8,7 @@ from transformations import *
 
 # construct argument parser and parse args
 ap = argparse.ArgumentParser()
-ap.add_argument('-i', '--image', default='images/receipt.jpg')
+ap.add_argument('-i', '--image', default='test_images/receipt1.jpg')
 args = vars(ap.parse_args())
 
 # load image, compute the ratio of old height 
@@ -59,8 +59,8 @@ cv2.imshow('Outline', image)
 #cv2.waitKey(0)
 #cv2.destroyAllWindows()
 
-# apply four point transform
-warped = four_point_transform(original, screen_contours.reshape(4,2)* ratio)
+# apply transform
+warped = perspective_transform(original, screen_contours.reshape(4,2)* ratio)
 
 # convert to grayscale then threshold it
 warped = cv2.cvtColor(warped, cv2.COLOR_BGR2GRAY)
