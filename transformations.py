@@ -24,7 +24,7 @@ def order_points(points):
     # return ordered coordinates
     return rectangle
 
-def four_point_transform(image, points):
+def perspective_transform(image, points):
     # get a consistent order of points and unpack them seperately
     rectangle = order_points(points)
     (top_left, top_right, bottom_right, bottom_left) = rectangle
